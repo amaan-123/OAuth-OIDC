@@ -15,7 +15,8 @@ keycloak
     }
 
     console.log("Authenticated!");
-    console.log("Token:", keycloak.token);
+    console.log("Access Token:", keycloak.token);
+    console.log("Parsed Token:", keycloak.tokenParsed);
 
     createRoot(document.getElementById("root")).render(
       <StrictMode>
