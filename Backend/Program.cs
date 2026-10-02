@@ -9,7 +9,7 @@ builder.Services
         options.Authority =
             "http://localhost:8080/realms/fullstack-lab";
 
-        options.Audience = "account";
+        options.Audience = "dotnet-api";
         options.RequireHttpsMetadata = false;
     });
 
