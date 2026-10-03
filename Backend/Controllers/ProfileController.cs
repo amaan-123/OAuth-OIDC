@@ -20,4 +20,11 @@ public class ProfileController : ControllerBase
             })
         });
     }
+
+    [Authorize(Roles = "Admin")]
+    [HttpGet("admin")]
+    public IActionResult AdminOnly()
+    {
+        return Ok("You are an Admin.");
+    }
 }
